@@ -1,26 +1,27 @@
-const { MongoClient } = require('mongodb'); // MongoDB client for database access
-const express = require('express');
-const cors = require('cors');
-
-// Load environment variables locally (only for local testing)
-if (process.env.NODE_ENV !== 'production') {
-  require('dotenv').config();
-}
-
-// Initialize Express app
+require('dotenv').config();
+const port = 4000;
+const express = require("express");
 const app = express();
+const mongoose = require("mongoose");
+const cors = require("cors");
+
+
 app.use(express.json());
 app.use(cors());
 
-// MongoDB connection
 const mongoUri = process.env.MONGO_URI;
 if (!mongoUri) {
-  console.error('Error: MONGO_URI is not defined');
-  throw new Error('MONGO_URI is required in the environment variables');
+  console.error('Error: MONGO_URI is not defined in the .env file');
+  process.exit(1); // Exit the application if MONGO_URI is missing
 }
+console.log('MONGO_URI:', process.env.MONGO_URI);
 
-const client = new MongoClient(mongoUri);
-
+mongoose.connect(mongoUri, {
+  useNewUrlParser: true,
+  useUnifiedTopology: true,
+})
+  .then(() => console.log('MongoDB connected successfully'))
+  .catch((err) => console.error('MongoDB connection error:', err));
 
 // Root Route
 app.get("/", (req, res) => {
