@@ -22,30 +22,6 @@ mongoose.connect(mongoUri, {
 })
   .then(() => console.log('MongoDB connected successfully'))
   .catch((err) => console.error('MongoDB connection error:', err));
-  
-// const { MongoClient } = require('mongodb'); // MongoDB client for database access
-// const express = require('express');
-// const cors = require('cors');
-
-// // Load environment variables locally (only for local testing)
-// if (process.env.NODE_ENV !== 'production') {
-//   require('dotenv').config();
-// }
-
-// // Initialize Express app
-// const app = express();
-// app.use(express.json());
-// app.use(cors());
-
-// // MongoDB connection
-// const mongoUri = process.env.MONGO_URI;
-// if (!mongoUri) {
-//   console.error('Error: MONGO_URI is not defined');
-//   throw new Error('MONGO_URI is required in the environment variables');
-// }
-
-// const client = new MongoClient(mongoUri);
-
 
 // Root Route
 app.get("/", (req, res) => {
