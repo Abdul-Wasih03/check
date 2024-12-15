@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/static/css/main.d97955c4.css",
+    "main.js": "/static/js/main.dec7657a.js",
+    "static/js/453.8ab44547.chunk.js": "/static/js/453.8ab44547.chunk.js",
+    "static/media/democracy.png": "/static/media/democracy.4cf1a1d9aee97bfe0a1f.png",
+    "static/media/background.png": "/static/media/background.f6247a354dd7af1fd3b7.png",
+    "static/media/america.png": "/static/media/america.3a3f5d1767438eb98d7e.png",
+    "static/media/socialism.png": "/static/media/socialism.2b657f096d52732e2c62.png",
+    "static/media/india.png": "/static/media/india.40d0e0a5982609dd6cbb.png",
+    "static/media/venezuela.png": "/static/media/venezuela.acac99791b382fa7771f.png",
+    "static/media/communism.png": "/static/media/communism.d309e0d812efc6041cec.png",
+    "static/media/nazism.png": "/static/media/nazism.52bbaabd78c63f4c48a5.png",
+    "static/media/cuba.png": "/static/media/cuba.48953e7b4df039219019.png",
+    "static/media/logo.png": "/static/media/logo.186f8522654d17c22a94.png",
+    "static/media/canada.png": "/static/media/canada.842d1aa4c6b7dcc2b140.png",
+    "index.html": "/index.html",
+    "main.d97955c4.css.map": "/static/css/main.d97955c4.css.map",
+    "main.dec7657a.js.map": "/static/js/main.dec7657a.js.map",
+    "453.8ab44547.chunk.js.map": "/static/js/453.8ab44547.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d97955c4.css",
+    "static/js/main.dec7657a.js"
+  ]
+}
